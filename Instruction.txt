@@ -1,0 +1,22 @@
+Create a directory and do "npm init" : This will create package.json file
+create a file name "Server.js"
+-Install express : npm install express --save
+-install cors
+
+//Server.js
+import "express" package using "require" function
+create an app variable and set it to request. 
+
+-App.get allows us to share send files
+app.get('/url/', (request, response) => {
+    -response allows us to send things
+    -response.sendFIles(__dirname + '/filename.html')
+})
+
+
+//app.listen method allows us to listen a Server
+it takes two things. PORT and a callback
+
+ app.listen(PORT, () = > {
+    console.log(`Running the server on ${PORT}`)
+ })
